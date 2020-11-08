@@ -5,218 +5,342 @@
     <title>Home-work</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="./styles/features.css" rel="stylesheet">
+    <link href="./styles/our_process.css" rel="stylesheet">
+    <link href="./styles/pricing.css" rel="stylesheet">
+    <link href="./styles/reviews.css" rel="stylesheet">
+    <link href="./styles/custom_section.css" rel="stylesheet">
+    <link href="./styles/contact_form.css" rel="stylesheet">
+    <link href="./styles/footer.css" rel="stylesheet">
+    <link href="./styles/first_page.css" rel="stylesheet">
 <style>
     body {
         margin: 0;
-        width: 1402px;
+        min-width: 1402px;
     }
-
-    /*First block - features*/
-
-    .features {
-        display: flex;
-        padding: 131px 143px;
-        height: 336px;
-        background-color: #F5F5F5;
-    }
-    .tabs {
-        text-align: center;
-        line-height: 112px;
-        color: #ffffff;
-        font-family:'Raleway', 'Arial', sans-serif;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    .tabs div:first-child {
-        box-sizing: border-box;
-        width: 112px;
-        height: 112px;
-        border-top: 1px solid #FF9B51;
-        border-bottom: 1px solid #ffffff;
-        border-radius: 4px 4px 0 0;
-        background: #FF9B51;
-    }
-    .tabs div:nth-child(2) {
-        box-sizing: border-box;
-        width: 112px;
-        height: 112px;
-        background: #333333;
-        border-top: 1px solid #ffffff;
-        border-bottom: 1px solid #ffffff;
-    }
-    .tabs div:last-child {
-        box-sizing: border-box;
-        width: 112px;
-        height: 112px;
-        border-bottom: 1px solid #333333;
-        border-radius: 0 0 4px 4px ;
-        background: #333333;
-    }
-    .info {
-        margin: 0 78px 0 99px;
-    }
-    .info p {
-        margin-bottom: 42px;
-    }
-    .info p:first-child {
-        font-family:'Raleway', 'Arial', sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-        margin-top: 4px;
-    }
-    .info p:nth-child(n+2):nth-child(-n+3) {
-        width: 506px;
-        font-family:'Raleway', 'Arial', sans-serif;
-        font-weight: normal;
-        font-size: 14px;
-        color: #86878B;
-        line-height: 20px;
-    }
-    input {
-        width: 134px;
-        height: 42px;
-        color: #ffffff;
-        background-color: #fa8f21;
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-        border-radius: 4px;
-        margin-bottom: 168px;
-    }
-    .picture img {
-        width: 302px;
-        height: 253px;
-        margin-top: 24px;
-    }
-
-    /*Second block - Our process*/
-
-    .our-process {
-        height: 587px;
-    }
-    h1 {
-        margin-top: 102px;
-        font-family:'Raleway', 'Arial', sans-serif;
-        font-size: 36px;
-        font-weight: normal;
-        text-align: center;
-    }
-    hr {
-        border: none;
-        background-color: #FD8B38;
-        width: 64px;
-        height: 2px;
-    }
-    h2 {
-        font-family:'Raleway', 'Arial', sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .under-heading{
-        margin-top: 24px;
-        font-family:'Open Sans', 'Arial', sans-serif;
-        font-size: 14px;
-        text-align: center;
-        color: #86878B;
-    }
-    .details {
-        display: flex;
-        margin-top: 66px;
-        justify-content: center;
-    }
-    .details div {
-        width: 350px;
-        height: 197px;
-        text-align: center;
-        margin-right: 32px;
-    }
-    .about-details {
-        line-height: 20px;
-        font-family:'Raleway', 'Arial', sans-serif;
-        font-size: 14px;
-        color: #86878B;
-    }
-
-    /* Это не сделано)) Third block - Custom section
-    .line {
-        margin-top: 167px;
-        border: none;
-        background-color: #ffffff;
-        color: #ffffff;
-        width: 64px;
-        height: 2px;
-    }
-    .clip {
-        color: #FD8B38;
-    }
-    .clip + p {
-        font-family:'Raleway', sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        text-align: center;
-        color: #212121;
-    }
-    */
-
-
 </style>
 </head>
 <body>
-<!--Features-->
-<section class="features">
-    <div class="tabs">
-        <div>TAB 1</div>
-        <div>TAB 2</div>
-        <div>TAB 3</div>
+
+<!--First page-->
+<nav>
+    <a class="navbar-logo" href="#home">AX<span>IT</span></a>
+    <div class="navbar-link">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
     </div>
-    <div class="info">
-        <p>Tabs with soft transitioning effect.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p></p>
-        <p><input type="button" value="Download"></p>
+</nav>
+<section>
+    <section id="home" class="first-page">
+        <section class="main-info">
+            <h1>AX<span>IT</span></h1>
+            <h2>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+            <p class="main-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+            <p><button>Download</button></p>
+        </section>
+        <form class="get-started">
+            <header>Try Your <span>FREE</span> Trial Today</header>
+            <div class="get-started-data">
+                <div>
+                    <label for="user_name"></label>
+                    <input type="text" id="user_name" value="Name">
+                </div>
+                <div>
+                    <label for="user_email"></label>
+                    <input type="text" id="user_email" value="Email">
+                </div>
+                <div>
+                    <label for="user_password"></label>
+                    <input type="text" id="user_password" value="Password">
+                </div>
+            </div>
+            <button name="submit">Get Started</button>
+        </form>
+    </section>
+</section>
+<section class="header-social-net">
+    <div>
+        <p class="social-net-info">Social Media</p>
+        <p class="social-net-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
     </div>
-    <div class="picture">
-        <img src="image_right_u255%201.svg" alt=city">
+    <div class="header-social-net-icons">
+        <a href=""><img src="./social%20icons/facebook-3.svg" alt="facebook"></a>
+        <a href=""><img src="./social%20icons/Group%201.svg" alt="google+"></a>
+        <a href=""><img src="./social%20icons/twitter-3.svg" alt="twitter"></a>
+        <a href=""><img src="./social%20icons/instagram-2-1.svg" alt="instagram"></a>
+        <a href=""><img src="./social%20icons/linkedin-icon.svg" alt="linkedin"></a>
+        <a href=""><img src="./social%20icons/pinterest-1.svg" alt="pinterest"></a>
     </div>
 </section>
+
+<!--Features-->
+<section id="features" class="features">
+    <ul>
+        <li class="features-tabs">TAB 1</li>
+        <li class="features-tabs">TAB 2</li>
+        <li class="features-tabs">TAB 3</li>
+    </ul>
+    <div>
+        <p class="features-info">Tabs with soft transitioning effect.</p>
+        <p class="features-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+        <p class="features-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+        <p><button>Download</button></p>
+    </div>
+    <div class="picture-container">
+        <img src="./other%20pic/image_right_u255%201.svg" alt="city">
+    </div>
+</section>
+
 <!--Why this is awesome-->
-<section class="our-process">
+<section id="about" class="process">
     <header>
-        <h1>WHY THIS IS AWESOME</h1>
-        <hr>
-        <p class="under-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>WHY THIS IS AWESOME</h2>
+        <p class="process-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </header>
-    <section class="details">
+    <section class="process-details">
         <div>
-            <img src="thoughtful%20desing.png" alt="Thoughtful Design">
-            <h2>Thoughtful Design</h2>
+            <img src="./other%20pic/thoughtful%20desing.png" alt="Thoughtful Design">
+            <h3>Thoughtful Design</h3>
             <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
         </div>
         <div>
-            <img src="well%20crafted.png" alt="Well Crafted">
-            <h2>Well Crafted</h2>
+            <img src="./other%20pic/well%20crafted.png" alt="Well Crafted">
+            <h3>Well Crafted</h3>
             <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
         </div>
         <div>
-            <img src="easy%20to%20customize.png" alt="Easy to Customize">
-            <h2>Easy to Customize</h2>
+            <img src="./other%20pic/easy%20to%20customize.png" alt="Easy to Customize">
+            <h3>Easy to Customize</h3>
             <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
         </div>
     </section>
 </section>
 
-<!-- In process Custom section
-<div>
+<!--Pricing-->
+<section id="pricing" class="pricing">
+    <header>
+        <h2>PRICING OPTIONS</h2>
+        <p class="pricing-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
     <section>
-        <h1 class="clip">STYLISH AXURE DESIGN</h1>
-        <hr class="line">
-        <p>Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+        <ul class="tariffs">
+            <li>
+                <table>
+                    <thead>
+                    <tr class="tariffs-name">
+                        <th>Basic</th>
+                    </tr>
+                    <tr class="tariffs-price">
+                        <td><span>$</span>0</td>
+                    </tr>
+                    <tr class="tariffs-payment">
+                        <td>Free for Life</td>
+                    </tr>
+                    <tr class="tariffs-comment">
+                        <td></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="tariffs-info">
+                        <td>1 GB OF SPACE</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>10 GB OF BANDWIDTH</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>3 WEBSITES</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>BASIC CUSTOMIZATION</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>WORDPRESS INTEGRATION</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>EMAIL SUPPORT</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <table>
+                    <thead>
+                    <tr class="tariffs-name">
+                        <th>Professional</th>
+                    </tr>
+                    <tr class="tariffs-price">
+                        <td><span>$</span>19</td>
+                    </tr>
+                    <tr class="tariffs-payment">
+                        <td>Monthly Payment</td>
+                    </tr>
+                    <tr class="tariffs-comment">
+                        <td class="tariffs-popular">OUR MOST POPULAR</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="tariffs-info">
+                        <td>5 GB OF SPACE</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>50 GB OF BANDWIDTH</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>12 WEBSITES</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>ADVANCED CUSTOMIZATION</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>WORDPRESS INTEGRATION</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>EMAIL SUPPORT</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <table>
+                    <thead>
+                    <tr class="tariffs-name">
+                        <th>Enterprise</th>
+                    </tr>
+                    <tr class="tariffs-price">
+                        <td><span>$</span>70</td>
+                    </tr>
+                    <tr class="tariffs-payment">
+                        <td>Monthly Payment</td>
+                    </tr>
+                    <tr class="tariffs-comment">
+                        <td></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="tariffs-info">
+                        <td>UNLIMITED SPACE</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>UNLIMITED BANDWIDTH</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>100 WEBSITES</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>ADVANCED CUSTOMIZATION</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>WORDPRESS INTEGRATION</td>
+                    </tr>
+                    <tr class="tariffs-info">
+                        <td>24/7 CUSTOMER SUPPORT</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
     </section>
-    <button>Button</button>
-</div>
-<div>
+</section>
+
+<!--Reviews-->
+<section id="reviews" class="reviews">
+    <header>
+        <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+        <p class="reviews-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
+    <section class="reviews-details">
+        <section>
+            <div class="reviews-comment"> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</span></div>
+            <div class="reviews-users">
+                <img src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
+                <div class="reviews-users-info">
+                    <h4>Jeremy H.</h4>
+                    <span>Manager</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="reviews-comment"> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</span></div>
+            <div class="reviews-users">
+                <img src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
+                <div class="reviews-users-info">
+                    <h4>John S.</h4>
+                    <span>Freelancer</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="reviews-comment"> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</span></div>
+            <div class="reviews-users">
+                <img src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
+                <div class="reviews-users-info">
+                    <h4>Susan W.</h4>
+                    <span>Photographer</span>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
+
+<!--Custom section-->
+<section class="custom-section">
+    <header>
+        <h2>STYLISH AXURE DESIGN</h2>
+        <p class="custom-section-description">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+    </header>
     <section>
-        icons
+        <button>Download</button>
+    </section>
+</section>
+
+<!--Contact Us-->
+<section id="contact" class="user-contacts">
+    <header>
+        <h2>CONTACT US</h2>
+        <p class="user-contacts-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
+    <form class="contact-form">
+        <div class="entry-form-1">
+            <div>
+                <label for="name"></label>
+                <input type="text" id="name" name="name" value="Name">
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" id="email" name="mail" value="Email">
+            </div>
+            <div>
+                <label for="subject"></label>
+                <input type="text" id="subject" name="subject" value="Subject">
+            </div>
+        </div>
+        <div class="entry-form-2">
+            <div>
+                <label for="msg"></label>
+                <input type="text" id="msg" name="message" value="Message">
+            </div>
+        </div>
+    </form>
+    <button class="contact-button" name="submit">Send Message</button>
+</section>
+
+<!--Footer-->
+<footer class="footer">
+    <section class="footer-social-net-icons">
+        <a href=""><img src="./social%20icons/facebook-3.svg" alt="facebook"></a>
+        <a href=""><img src="./social%20icons/Group%201.svg" alt="google+"></a>
+        <a href=""><img src="./social%20icons/twitter-3.svg" alt="twitter"></a>
+        <a href=""><img src="./social%20icons/instagram-2-1.svg" alt="instagram"></a>
+        <a href=""><img src="./social%20icons/linkedin-icon.svg" alt="linkedin"></a>
+        <a href=""><img src="./social%20icons/pinterest-1.svg" alt="pinterest"></a>
     </section>
     <p>© 2015 Axure Themes</p>
-</div>-->
+</footer>
+
 </body>
 </html>

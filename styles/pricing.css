@@ -1,0 +1,87 @@
+.pricing {
+    padding: 102px 147px;
+    background-color: #f5f5f5;
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pricing h2 {
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+.pricing h2::after {
+    content: '';
+    width: 64px;
+    height: 2px;
+    position: absolute;
+    left: calc(50% - 64px/2);
+    bottom: 0;
+    background: #FD8B38;
+}
+.pricing-description {
+    margin: 0;
+    font-family:'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #86878B;
+}
+.pricing header {
+    margin-bottom: 81px;
+}
+.tariffs {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.tariffs table {
+    border-spacing: 1px;
+    min-width: 343px;
+}
+.tariffs thead {
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+}
+.tariffs-name {
+    font-size: 20px;
+    line-height: 60px; /* не получилось паддингами */
+}
+.tariffs-price {
+    font-size: 50px;
+    line-height: 100px;
+}
+.tariffs-price span {
+    font-size: 24px;
+}
+.tariffs-payment {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 70% ;
+    line-height: 50px;
+}
+.tariffs .tariffs-comment {
+    /* в макете у первой и второй эта ячейка без border-spacing, не получилось сделать */
+    background-color: #ff8b38;
+    font-size: 14px;
+    line-height: 40px;
+}
+.tariffs tbody {
+    background-color: #ffffff;
+    color: #86878B;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+}
+

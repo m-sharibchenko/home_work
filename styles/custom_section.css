@@ -1,0 +1,51 @@
+.custom-section {
+    min-height: 297px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    background: url("../other pic/architecture-1850129_1920 1.svg") center/cover no-repeat #86878B;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.custom-section h2 {
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+.custom-section h2::after {
+    content: '';
+    width: 64px;
+    height: 2px;
+    position: absolute;
+    left: calc(50% - 64px/2);
+    bottom: 0;
+    background: #ffffff;
+}
+.custom-section-description {
+    margin: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.custom-section header {
+    margin-bottom: 38px;
+    color: #ffffff;
+}
+.custom-section button {
+    width: 134px;
+    height: 42px;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}

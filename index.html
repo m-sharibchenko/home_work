@@ -3,93 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Home-work</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="./styles/features.css" rel="stylesheet">
-    <link href="./styles/our_process.css" rel="stylesheet">
-    <link href="./styles/pricing.css" rel="stylesheet">
-    <link href="./styles/reviews.css" rel="stylesheet">
-    <link href="./styles/custom_section.css" rel="stylesheet">
-    <link href="./styles/contact_form.css" rel="stylesheet">
-    <link href="./styles/footer.css" rel="stylesheet">
-    <link href="./styles/first_page.css" rel="stylesheet">
+    <link href="./styles/import_styles.css" rel="stylesheet">
 <style>
-    body {
-        margin: 0;
-        min-width: 1402px;
-    }
+
 </style>
 </head>
 <body>
 
-<!--First page-->
+<!--Home page-->
 <nav>
-    <a class="navbar-logo" href="#home">AX<span>IT</span></a>
-    <div class="navbar-link">
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <a class="navbar-logo" href="#home">
+        AX<span>IT</span>
+    </a>
+    <ul class="navbar-links">
+        <li><a class="navbar-link" href="#features">Features</a></li>
+        <li><a class="navbar-link" href="#about">About</a></li>
+        <li><a class="navbar-link" href="#pricing">Pricing</a></li>
+        <li><a class="navbar-link" href="#reviews">Reviews</a></li>
+        <li><a class="navbar-link" href="#contact">Contact</a></li>
+    </ul>
 </nav>
-<section>
-    <section id="home" class="first-page">
-        <section class="main-info">
-            <h1>AX<span>IT</span></h1>
-            <h2>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
-            <p class="main-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-            <p><button>Download</button></p>
-        </section>
-        <form class="get-started">
-            <header>Try Your <span>FREE</span> Trial Today</header>
+<section id="home" class="home-page">
+        <div class="main-info">
+            <h1>
+                AX<span>IT</span>
+            </h1>
+            <h2 class="product-info-title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+            <p class="product-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+            <div><button class="button-download">Download</button></div>
+        </div>
+        <form class="get-started-form">
+            <header class="get-started-header">
+                Try Your <span>FREE</span> Trial Today
+            </header>
             <div class="get-started-data">
                 <div>
                     <label for="user_name"></label>
-                    <input type="text" id="user_name" value="Name">
+                    <input type="text" id="user_name" name="name" placeholder="Name">
                 </div>
                 <div>
                     <label for="user_email"></label>
-                    <input type="text" id="user_email" value="Email">
+                    <input type="email" id="user_email" name="email" placeholder="Email">
                 </div>
                 <div>
                     <label for="user_password"></label>
-                    <input type="text" id="user_password" value="Password">
+                    <input type="text" id="user_password" name="password" placeholder="Password">
                 </div>
             </div>
-            <button name="submit">Get Started</button>
+            <button class="get-started-form-button" name="submit">Get Started</button>
         </form>
-    </section>
 </section>
-<section class="header-social-net">
-    <div>
-        <p class="social-net-info">Social Media</p>
-        <p class="social-net-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+<section class="social-net">
+    <div class="social-net-info">
+        <h3 class="social-net-title">Social Media</h3>
+        <p class="social-net-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
     </div>
-    <div class="header-social-net-icons">
-        <a href=""><img src="./social%20icons/facebook-3.svg" alt="facebook"></a>
-        <a href=""><img src="./social%20icons/Group%201.svg" alt="google+"></a>
-        <a href=""><img src="./social%20icons/twitter-3.svg" alt="twitter"></a>
-        <a href=""><img src="./social%20icons/instagram-2-1.svg" alt="instagram"></a>
-        <a href=""><img src="./social%20icons/linkedin-icon.svg" alt="linkedin"></a>
-        <a href=""><img src="./social%20icons/pinterest-1.svg" alt="pinterest"></a>
-    </div>
+    <ul class="social-net-icons">
+        <li> <a href=""><img src="./social%20icons/facebook-3.svg" alt="facebook"></a> </li>
+        <li> <a href=""><img src="./social%20icons/Group%201.svg" alt="google+"></a> </li>
+        <li> <a href=""><img src="./social%20icons/twitter-3.svg" alt="twitter"></a> </li>
+        <li> <a href=""><img src="./social%20icons/instagram-2-1.svg" alt="instagram"></a> </li>
+        <li> <a href=""><img src="./social%20icons/linkedin-icon.svg" alt="linkedin"></a> </li>
+        <li> <a href=""><img src="./social%20icons/pinterest-1.svg" alt="pinterest"></a> </li>
+    </ul>
 </section>
 
 <!--Features-->
 <section id="features" class="features">
-    <ul>
-        <li class="features-tabs">TAB 1</li>
-        <li class="features-tabs">TAB 2</li>
-        <li class="features-tabs">TAB 3</li>
+    <ul class="features-tabs">
+        <li> <button class="features-tab">TAB 1</button> </li>
+        <li> <button class="features-tab">TAB 2</button> </li>
+        <li> <button class="features-tab">TAB 3</button> </li>
     </ul>
     <div>
-        <p class="features-info">Tabs with soft transitioning effect.</p>
-        <p class="features-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-        <p class="features-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-        <p><button>Download</button></p>
+        <h3 class="features-title">Tabs with soft transitioning effect.</h3>
+        <p class="features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+        <p class="features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+        <div><button class="button-download">Download</button></div>
     </div>
-    <div class="picture-container">
+    <div class="features-picture-container">
         <img src="./other%20pic/image_right_u255%201.svg" alt="city">
     </div>
 </section>
@@ -97,248 +89,181 @@
 <!--Why this is awesome-->
 <section id="about" class="process">
     <header>
-        <h2>WHY THIS IS AWESOME</h2>
-        <p class="process-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2 class="section-title">WHY THIS IS AWESOME</h2>
+        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </header>
-    <section class="process-details">
-        <div>
+    <main class="process-details">
+        <div class="process-detail">
             <img src="./other%20pic/thoughtful%20desing.png" alt="Thoughtful Design">
-            <h3>Thoughtful Design</h3>
-            <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
+            <h3 class="process-detail-title">Thoughtful Design</h3>
+            <p class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
         </div>
-        <div>
+        <div class="process-detail">
             <img src="./other%20pic/well%20crafted.png" alt="Well Crafted">
-            <h3>Well Crafted</h3>
-            <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
+            <h3 class="process-detail-title">Well Crafted</h3>
+            <p class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
         </div>
-        <div>
+        <div class="process-detail">
             <img src="./other%20pic/easy%20to%20customize.png" alt="Easy to Customize">
-            <h3>Easy to Customize</h3>
-            <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
+            <h3 class="process-detail-title">Easy to Customize</h3>
+            <p class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
         </div>
-    </section>
+    </main>
 </section>
 
 <!--Pricing-->
 <section id="pricing" class="pricing">
     <header>
-        <h2>PRICING OPTIONS</h2>
-        <p class="pricing-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2 class="section-title">PRICING OPTIONS</h2>
+        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </header>
-    <section>
-        <ul class="tariffs">
-            <li>
-                <table>
-                    <thead>
-                    <tr class="tariffs-name">
-                        <th>Basic</th>
-                    </tr>
-                    <tr class="tariffs-price">
-                        <td><span>$</span>0</td>
-                    </tr>
-                    <tr class="tariffs-payment">
-                        <td>Free for Life</td>
-                    </tr>
-                    <tr class="tariffs-comment">
-                        <td></td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="tariffs-info">
-                        <td>1 GB OF SPACE</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>10 GB OF BANDWIDTH</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>3 WEBSITES</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>BASIC CUSTOMIZATION</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>WORDPRESS INTEGRATION</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>EMAIL SUPPORT</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </li>
-            <li>
-                <table>
-                    <thead>
-                    <tr class="tariffs-name">
-                        <th>Professional</th>
-                    </tr>
-                    <tr class="tariffs-price">
-                        <td><span>$</span>19</td>
-                    </tr>
-                    <tr class="tariffs-payment">
-                        <td>Monthly Payment</td>
-                    </tr>
-                    <tr class="tariffs-comment">
-                        <td class="tariffs-popular">OUR MOST POPULAR</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="tariffs-info">
-                        <td>5 GB OF SPACE</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>50 GB OF BANDWIDTH</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>12 WEBSITES</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>ADVANCED CUSTOMIZATION</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>WORDPRESS INTEGRATION</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>EMAIL SUPPORT</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </li>
-            <li>
-                <table>
-                    <thead>
-                    <tr class="tariffs-name">
-                        <th>Enterprise</th>
-                    </tr>
-                    <tr class="tariffs-price">
-                        <td><span>$</span>70</td>
-                    </tr>
-                    <tr class="tariffs-payment">
-                        <td>Monthly Payment</td>
-                    </tr>
-                    <tr class="tariffs-comment">
-                        <td></td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="tariffs-info">
-                        <td>UNLIMITED SPACE</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>UNLIMITED BANDWIDTH</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>100 WEBSITES</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>ADVANCED CUSTOMIZATION</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>WORDPRESS INTEGRATION</td>
-                    </tr>
-                    <tr class="tariffs-info">
-                        <td>24/7 CUSTOMER SUPPORT</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </li>
-        </ul>
-    </section>
+    <main class="tariffs">
+        <div class="tariff">
+            <div class="tariff-major-info">
+                <div class="tariffs-name"> Basic </div>
+                <div class="tariffs-price"> <span>$</span>0</div>
+                <div class="tariffs-payment"> Free for Life</div>
+            </div>
+            <ul class="tariffs-info">
+                <li> 1 GB OF SPACE </li>
+                <li> 10 GB OF BANDWIDTH </li>
+                <li> 3 WEBSITES </li>
+                <li> BASIC CUSTOMIZATION </li>
+                <li> WORDPRESS INTEGRATION </li>
+                <li> EMAIL SUPPORT </li>
+            </ul>
+        </div>
+
+        <div class="tariff">
+            <div class="tariff-major-info popular-tariff">
+                <div class="tariffs-name"> Professional </div>
+                <div class="tariffs-price"> <span>$</span>19 </div>
+                <div class="tariffs-payment"> Monthly Payment </div>
+                <div class="tariff-comment"> OUR MOST POPULAR </div>
+            </div>
+            <ul class="tariffs-info">
+                <li> 5 GB OF SPACE </li>
+                <li> 50 GB OF BANDWIDTH </li>
+                <li> 12 WEBSITES </li>
+                <li> ADVANCED CUSTOMIZATION </li>
+                <li> WORDPRESS INTEGRATION </li>
+                <li> EMAIL SUPPORT </li>
+            </ul>
+        </div>
+
+        <div class="tariff">
+            <div class="tariff-major-info">
+                <div class="tariffs-name"> Enterprise </div>
+                <div class="tariffs-price"> <span>$</span>70 </div>
+                <div class="tariffs-payment"> Monthly Payment </div>
+            </div>
+            <ul class="tariffs-info">
+                <li> UNLIMITED SPACE </li>
+                <li> UNLIMITED BANDWIDTH </li>
+                <li> 100 WEBSITES </li>
+                <li> ADVANCED CUSTOMIZATION </li>
+                <li> WORDPRESS INTEGRATION </li>
+                <li> 24/7 CUSTOMER SUPPORT</li>
+            </ul>
+        </div>
+    </main>
 </section>
 
 <!--Reviews-->
 <section id="reviews" class="reviews">
     <header>
-        <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
-        <p class="reviews-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2 class="section-title">WHAT OUR CUSTOMERS ARE SAYING</h2>
+        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </header>
-    <section class="reviews-details">
-        <section>
-            <div class="reviews-comment"> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</span></div>
+    <main class="reviews-details">
+        <div>
+            <blockquote class="reviews-comment"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit. </blockquote>
             <div class="reviews-users">
-                <img src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
+                <img class="reviews-user-avatar" src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
                 <div class="reviews-users-info">
-                    <h4>Jeremy H.</h4>
-                    <span>Manager</span>
+                    <h4 class="reviews-user-name">Jeremy H.</h4>
+                    <p class="reviews-user-prof">Manager</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <div class="reviews-comment"> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</span></div>
+        <div>
+            <blockquote class="reviews-comment"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit. </blockquote>
             <div class="reviews-users">
-                <img src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
+                <img class="reviews-user-avatar" src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
                 <div class="reviews-users-info">
-                    <h4>John S.</h4>
-                    <span>Freelancer</span>
+                    <h4 class="reviews-user-name">John S.</h4>
+                    <p class="reviews-user-prof">Freelancer</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <div class="reviews-comment"> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</span></div>
+        <div>
+            <blockquote class="reviews-comment"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit. </blockquote>
             <div class="reviews-users">
-                <img src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
+                <img class="reviews-user-avatar" src="./other%20pic/avatar_2_u231%201.png" alt="User picture">
                 <div class="reviews-users-info">
-                    <h4>Susan W.</h4>
-                    <span>Photographer</span>
+                    <h4 class="reviews-user-name">Susan W.</h4>
+                    <p class="reviews-user-prof">Photographer</p>
                 </div>
             </div>
-        </section>
-    </section>
+        </div>
+    </main>
 </section>
 
 <!--Custom section-->
 <section class="custom-section">
     <header>
-        <h2>STYLISH AXURE DESIGN</h2>
-        <p class="custom-section-description">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+        <h2 class="section-title custom-title">STYLISH AXURE DESIGN</h2>
+        <p class="section-description">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
     </header>
-    <section>
-        <button>Download</button>
-    </section>
+    <div><button class="button-download">Download</button></div>
 </section>
 
 <!--Contact Us-->
 <section id="contact" class="user-contacts">
     <header>
-        <h2>CONTACT US</h2>
-        <p class="user-contacts-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2 class="section-title">CONTACT US</h2>
+        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </header>
-    <form class="contact-form">
-        <div class="entry-form-1">
+    <form id="contact-form" class="contact-form">
+
+        <div class="entry-form">
             <div>
                 <label for="name"></label>
-                <input type="text" id="name" name="name" value="Name">
+                <input type="text" id="name" name="name" placeholder="Name">
             </div>
             <div>
                 <label for="email"></label>
-                <input type="email" id="email" name="mail" value="Email">
+                <input type="email" id="email" name="mail" placeholder="Email">
             </div>
             <div>
                 <label for="subject"></label>
-                <input type="text" id="subject" name="subject" value="Subject">
+                <input type="text" id="subject" name="subject" placeholder="Subject">
             </div>
         </div>
-        <div class="entry-form-2">
+
+        <div class="entry-form">
             <div>
                 <label for="msg"></label>
-                <input type="text" id="msg" name="message" value="Message">
+                <textarea id="msg" name="message" placeholder="Message" minlength="5"></textarea>
             </div>
         </div>
+
     </form>
-    <button class="contact-button" name="submit">Send Message</button>
+    <button form="contact-form" class="contact-button" type="submit">Send Message</button>
 </section>
 
 <!--Footer-->
 <footer class="footer">
-    <section class="footer-social-net-icons">
-        <a href=""><img src="./social%20icons/facebook-3.svg" alt="facebook"></a>
-        <a href=""><img src="./social%20icons/Group%201.svg" alt="google+"></a>
-        <a href=""><img src="./social%20icons/twitter-3.svg" alt="twitter"></a>
-        <a href=""><img src="./social%20icons/instagram-2-1.svg" alt="instagram"></a>
-        <a href=""><img src="./social%20icons/linkedin-icon.svg" alt="linkedin"></a>
-        <a href=""><img src="./social%20icons/pinterest-1.svg" alt="pinterest"></a>
-    </section>
+    <ul class="social-net-icons">
+        <li> <a href=""><img src="./social%20icons/facebook-3.svg" alt="facebook"></a> </li>
+        <li> <a href=""><img src="./social%20icons/Group%201.svg" alt="google+"></a> </li>
+        <li> <a href=""><img src="./social%20icons/twitter-3.svg" alt="twitter"></a> </li>
+        <li> <a href=""><img src="./social%20icons/instagram-2-1.svg" alt="instagram"></a> </li>
+        <li> <a href=""><img src="./social%20icons/linkedin-icon.svg" alt="linkedin"></a> </li>
+        <li> <a href=""><img src="./social%20icons/pinterest-1.svg" alt="pinterest"></a> </li>
+    </ul>
     <p>© 2015 Axure Themes</p>
 </footer>
 

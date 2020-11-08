@@ -1,57 +1,35 @@
 .process {
     padding: 102px 144px;
-    font-family: 'Raleway', 'Arial', sans-serif;
 }
-h2 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 20px;
-}
-.process h2 {
-    font-size: 36px;
-    font-weight: normal;
-    text-align: center;
-    position: relative;
-    padding-bottom: 22px;
-    margin-bottom: 22px;
-}
-.process h2::after {
-    content: '';
-    width: 64px;
-    height: 2px;
-    position: absolute;
-    left: calc(50% - 64px/2);
-    bottom: 0;
-    background: #FD8B38;
-}
-.process-description {
-    margin: 0;
-    font-family:'Open Sans', 'Arial', sans-serif;
-    font-size: 14px;
-    text-align: center;
-    color: #86878B;
-}
+
 .process header {
     margin-bottom: 66px;
 }
+
 .process-details {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.process-details div {
+
+.process-detail {
     max-width: 350px;
 }
-.process-details img {
+
+.process-detail img {
     margin-bottom: 27px;
 }
-.process-details h3{
+
+.process-detail-title {
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
+
 .about-details {
+    margin: 0;
     line-height: 20px;
     font-size: 14px;
+    font-weight: 300;
     color: #86878B;
 }

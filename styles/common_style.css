@@ -1,0 +1,84 @@
+:root {
+    --text-size-title: 36px;
+    --text-size-description: 14px;
+    --color-title: #000000;
+    --color-description: #86878B;
+    --color-decoration-elements: #FD8B38;
+    --font-main: 'Raleway', 'Arial', sans-serif;
+    --font-description: 'Open Sans', 'Arial', sans-serif;
+    --color-button: #FFFFFF;
+    --border-button: 1px solid #FFFFFF;
+    --text-size-button: 15px;
+    --margin-title: 0 0 22px 0;
+    --width-decoration-elements: 64px;
+}
+
+body {
+    margin: 0;
+    min-width: 1402px;
+    font-family: var(--font-main);
+}
+
+.section-title {
+    font-size: var(--text-size-title);
+    font-weight: 400;
+    color: var(--color-title);
+    position: relative;
+    text-align: center;
+    padding-bottom: 22px;
+    margin: var(--margin-title);
+}
+
+.section-title::after {
+    content: '';
+    width: var(--width-decoration-elements);
+    height: 2px;
+    position: absolute;
+    left: calc(50% - var(--width-decoration-elements)/2);
+    bottom: 0;
+    background: var(--color-decoration-elements);
+}
+
+.section-description {
+    margin: 0;
+    font-family: var(--font-description);
+    font-size: var(--text-size-description);
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-description);
+}
+
+button {
+    font-family: inherit;
+    font-size: var(--text-size-button);
+    border: var(--border-button);
+    border-radius: 4px;
+    color: var(--color-button);
+}
+
+.button-download {
+    width: 134px;
+    height: 42px;
+}
+
+h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social-net-icons {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.social-net-icons li:not(:last-child) {
+    margin-right: 32px;
+}
+
+.social-net-icons img {
+    width: 40px;
+    height: 40px;
+}

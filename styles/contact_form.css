@@ -1,74 +1,92 @@
 .user-contacts {
     min-height: 638px;
-    font-family: 'Raleway', 'Arial', sans-serif;
+    padding: 0 155px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-h2 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 20px;
-}
-.user-contacts h2 {
-    font-size: 36px;
-    font-weight: normal;
-    text-align: center;
-    position: relative;
-    padding-bottom: 22px;
-    margin-bottom: 22px;
-    color: #212121;
-}
-.user-contacts h2::after {
-    content: '';
-    width: 64px;
-    height: 2px;
-    position: absolute;
-    left: calc(50% - 64px/2);
-    bottom: 0;
-    background: #FD8B38;
-}
-.user-contacts-description {
-    margin: 0;
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-size: 14px;
-    text-align: center;
-    color: #86878B;
-}
+
 .user-contacts header {
     margin-bottom: 111px;
 }
+
 .contact-form {
+    min-width: 1110px;
     display: flex;
-    /* Не работает */
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     margin-bottom: 46px;
 }
-.contact-form input{
+
+.entry-form input{
     min-width: 527px;
     min-height: 32px;
-    color: #BDBDBD;
+    box-sizing: border-box;
     padding-left: 12px;
+    color: #000000;
     border: 0;
     border-bottom: 1px solid #BDBDBD;
     font-size: 14px;
+    font-family: inherit;
 }
-.entry-form-1 {
+
+.entry-form input:invalid {
+    color: #ec1818;
+    border-bottom: 1px dashed #ec1818
+}
+
+.entry-form:first-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 56px; /* А это работает */
 }
-.entry-form-2 input {
-    padding-bottom: 127px;
+
+.entry-form textarea {
+    border: 0;
+    border-bottom: 1px solid #BDBDBD;
+    min-width: 527px;
+    min-height: 145px;
+    resize: none;
+    padding: 0 0 0 12px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #000000;
 }
+
+.entry-form textarea:invalid{
+    color: #ec1818;
+    text-decoration-line: underline;
+}
+
 .contact-button {
     width: 163px;
     height: 42px;
-    color: #ffffff;
-    font-size: 15px;
+    position: relative;
     background-color: #FA8F21;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact-button::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    right: 100%;
+    background: linear-gradient(to left, rgb(250, 68, 231), rgb(255, 115, 26) 50%, rgb(250, 68, 231));
+}
+
+.contact-button:hover::before {
+    animation: swipe 1s forwards;
+}
+
+@keyframes swipe {
+    50% {
+        right: 0;
+    }
+    100% {
+        right: -100%;
+    }
 }

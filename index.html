@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Home-work</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        width: 1402px;
+    }
+
+    /*First block - features*/
+
+    .features {
+        display: flex;
+        padding: 131px 143px;
+        height: 336px;
+        background-color: #F5F5F5;
+    }
+    .tabs {
+        text-align: center;
+        line-height: 112px;
+        color: #ffffff;
+        font-family:'Raleway', 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .tabs div:first-child {
+        box-sizing: border-box;
+        width: 112px;
+        height: 112px;
+        border-top: 1px solid #FF9B51;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 4px 4px 0 0;
+        background: #FF9B51;
+    }
+    .tabs div:nth-child(2) {
+        box-sizing: border-box;
+        width: 112px;
+        height: 112px;
+        background: #333333;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+    .tabs div:last-child {
+        box-sizing: border-box;
+        width: 112px;
+        height: 112px;
+        border-bottom: 1px solid #333333;
+        border-radius: 0 0 4px 4px ;
+        background: #333333;
+    }
+    .info {
+        margin: 0 78px 0 99px;
+    }
+    .info p {
+        margin-bottom: 42px;
+    }
+    .info p:first-child {
+        font-family:'Raleway', 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 4px;
+    }
+    .info p:nth-child(n+2):nth-child(-n+3) {
+        width: 506px;
+        font-family:'Raleway', 'Arial', sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        color: #86878B;
+        line-height: 20px;
+    }
+    input {
+        width: 134px;
+        height: 42px;
+        color: #ffffff;
+        background-color: #fa8f21;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-bottom: 168px;
+    }
+    .picture img {
+        width: 302px;
+        height: 253px;
+        margin-top: 24px;
+    }
+
+    /*Second block - Our process*/
+
+    .our-process {
+        height: 587px;
+    }
+    h1 {
+        margin-top: 102px;
+        font-family:'Raleway', 'Arial', sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+        text-align: center;
+    }
+    hr {
+        border: none;
+        background-color: #FD8B38;
+        width: 64px;
+        height: 2px;
+    }
+    h2 {
+        font-family:'Raleway', 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .under-heading{
+        margin-top: 24px;
+        font-family:'Open Sans', 'Arial', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        color: #86878B;
+    }
+    .details {
+        display: flex;
+        margin-top: 66px;
+        justify-content: center;
+    }
+    .details div {
+        width: 350px;
+        height: 197px;
+        text-align: center;
+        margin-right: 32px;
+    }
+    .about-details {
+        line-height: 20px;
+        font-family:'Raleway', 'Arial', sans-serif;
+        font-size: 14px;
+        color: #86878B;
+    }
+
+    /* Это не сделано)) Third block - Custom section
+    .line {
+        margin-top: 167px;
+        border: none;
+        background-color: #ffffff;
+        color: #ffffff;
+        width: 64px;
+        height: 2px;
+    }
+    .clip {
+        color: #FD8B38;
+    }
+    .clip + p {
+        font-family:'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        color: #212121;
+    }
+    */
+
+
+</style>
+</head>
+<body>
+<!--Features-->
+<section class="features">
+    <div class="tabs">
+        <div>TAB 1</div>
+        <div>TAB 2</div>
+        <div>TAB 3</div>
+    </div>
+    <div class="info">
+        <p>Tabs with soft transitioning effect.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p></p>
+        <p><input type="button" value="Download"></p>
+    </div>
+    <div class="picture">
+        <img src="image_right_u255%201.svg" alt=city">
+    </div>
+</section>
+<!--Why this is awesome-->
+<section class="our-process">
+    <header>
+        <h1>WHY THIS IS AWESOME</h1>
+        <hr>
+        <p class="under-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
+    <section class="details">
+        <div>
+            <img src="thoughtful%20desing.png" alt="Thoughtful Design">
+            <h2>Thoughtful Design</h2>
+            <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
+        </div>
+        <div>
+            <img src="well%20crafted.png" alt="Well Crafted">
+            <h2>Well Crafted</h2>
+            <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
+        </div>
+        <div>
+            <img src="easy%20to%20customize.png" alt="Easy to Customize">
+            <h2>Easy to Customize</h2>
+            <span class="about-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</span>
+        </div>
+    </section>
+</section>
+
+<!-- In process Custom section
+<div>
+    <section>
+        <h1 class="clip">STYLISH AXURE DESIGN</h1>
+        <hr class="line">
+        <p>Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+    </section>
+    <button>Button</button>
+</div>
+<div>
+    <section>
+        icons
+    </section>
+    <p>© 2015 Axure Themes</p>
+</div>-->
+</body>
+</html>
